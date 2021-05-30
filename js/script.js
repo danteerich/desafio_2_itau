@@ -1,18 +1,18 @@
-//valida telefone
+//validar telefone
 function ValidaTelefone(tel){
         exp = /\(\d{2}\)\ \d{4}\-\d{4}/
         if(!exp.test(tel.value))
                 alert('Numero de Telefone Invalido!');
 }
 
-//valida CEP
+//validar CEP
 function ValidaCep(cep){
         exp = /\d{2}\.\d{3}\-\d{3}/
         if(!exp.test(cep.value))
                 alert('Numero de Cep Invalido!');               
 }
 
-//valida o CPF digitado
+//validar o CPF digitado
 function ValidarCPF(Objcpf){
         var cpf = Objcpf.value;
         exp = /\.|\-/g
