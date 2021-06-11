@@ -38,20 +38,7 @@ validarRG = function () {
     }
 }
 
-function validaSexo(sexoid) {
-	 var formulario = document.getElementById("formulario");
-	 escolhaSexo = -1;
-	 for(x = sexoid.sexo.lenght -1; x > -1; x--) {
-		if(sexoid.sexo[x].checked) {
-			   escolhaSexo = x;
-			          }
-    }
-		if(escolhaSexo == -1) {
-        alert("Qual o seu sexo?");
-        sexoid.sexo[0].focus();
-        return false;
-    }
-}
+
 //validar CEP
 function validaCep(cepid){
 		var formulario = document.getElementById("formulario");
