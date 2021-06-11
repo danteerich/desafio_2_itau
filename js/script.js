@@ -1,3 +1,25 @@
+function ValidarDados() {
+    if (document.getElementById("nomeid").value == "" || 
+        document.getElementById("cpfid").value == "" ||
+        document.getElementById("endid").value == "" ||
+        document.getElementById("numid").value == "" ||
+        document.getElementById("celid").value == "") 
+        {
+            alert("Favor preencher os campos obrigatórios.");
+            return false;
+    }
+    else
+            alert('Formulário enviado com sucesso!');
+            return true;
+        }
+    }
+}
+
+
+
+
+
+
 
 //Validar Nome
 function validaNome(nomeid) {
