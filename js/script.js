@@ -1,30 +1,39 @@
+
 //Validar Nome
-function validaNome(nomeid) {
-	   var formulario = document.getElementById("formulario");
-	  if(nomeid.nome.value == "" || nomeid.nome.value == null || nomeid.nome.value.lenght < 3) {
-		  alert("Por favor, Digite o seu nome.");
-		   nomeid.nome.focus();
-		       return false;
-    }
-}
+//function validaNome(nomeid) {
+	//   var formulario = document.getElementById("formulario");
+	 // if(nomeid.nome.value == "" || nomeid.nome.value == null || 	nomeid.nome.value.lenght < 3) {
+		//  alert("Por favor, Digite o seu nome.");
+		  // nomeid.nome.focus();
+		    //   return false;
+    //}
+//}
 	
+function validaNome(){
+if (nomeid.length < 5) {
+alert('Digite seu nome completo');
+formulario.nomeid.focus();
+return false;
+}
+}
 
 //validar o CPF digitado
 
-validar = function () {
+validarCPF = function () {
     var formulario = document.getElementById("formulario");
     var cpfid = formulario.cpf;
-    var re_cpfid = /^([\d]{3})([\d]{3})([\d]{3})([\d]{2})$/;
+    var re_cpfid =  /^([\d]{3})([\d]{3})([\d]{3})([\d]{2})$/;
 
     if(re_cpfid.test(cpfid.value)){
         alert("CPF válido");}
         else{
             alert("CPF inválido");
     }
+}
 
 //validar o RG digitado
 
-validar = function () {
+validarRG = function () {
     var formulario = document.getElementById("formulario");
     var rgid = formulario.rgid;
     var re_rgid = /^([\d]{2})([\d]{3})([\d]{3})([\d]{1})$/;
@@ -34,6 +43,7 @@ validar = function () {
         else{
             alert("RG inválido");
     }
+}
 
 function validaSexo(sexoid) {
 	 var formulario = document.getElementById("formulario");
@@ -44,7 +54,7 @@ function validaSexo(sexoid) {
 			          }
     }
 		if(escolhaSexo == -1) {
-        alert("qual o seu sexo?");
+        alert("Qual o seu sexo?");
         sexoid.sexo[0].focus();
         return false;
     }
@@ -55,10 +65,8 @@ function validaCep(cepid){
 			exp = /\d{2}\.\d{3}\-\d{3}/
         if(!exp.test(cepid.value))
                 alert('Numero de Cep Valido');
-				else{
-					alert('Numero de Cep Invalido!');
-}
 
+}
 
 
 //validar telefone Fixo
@@ -66,19 +74,18 @@ function validaTelefone(telid){
      var formulario = document.getElementById("formulario");  
 	   exp = /\(\d{2}\)\ \d{4}\-\d{4}/
         if(!exp.test(telid.value))
-                alert('Numero de Telefone Invalido!');
+                alert('Numero de Telefone Valido!');
 				else{
 					alert('Numero de Telefone Invalido!');
+				}
 }
 
 //validar telefone celular
-function validaTelefone(celid){
+function validaCelular(celid){
         var formulario = document.getElementById("formulario");
 			exp = /\(\d{2}\)\ \d{5}\-\d{4}/
         if(!exp.test(celid.value))
                 alert('Numero de Celular valido!');
-			else{
-					alert('Numero de Celular Invalido!');
+		
 }
-
 
