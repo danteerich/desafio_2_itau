@@ -1,21 +1,14 @@
 
 //Validar Nome
-//function validaNome(nomeid) {
-	//   var formulario = document.getElementById("formulario");
-	 // if(nomeid.nome.value == "" || nomeid.nome.value == null || 	nomeid.nome.value.lenght < 3) {
-		//  alert("Por favor, Digite o seu nome.");
-		  // nomeid.nome.focus();
-		    //   return false;
-    //}
-//}
+function validaNome(nomeid) {
+	   var formulario = document.getElementById("formulario");
+	 	 if(nomeid.nome.value == "" || nomeid.nome.value == null || 	nomeid.nome.value.lenght < 3) {
+		  alert("Por favor, Digite o seu nome.");
+		   nomeid.nome.focus();
+		       return false;
+    }
+}
 	
-function validaNome(){
-if (nomeid.length < 5) {
-alert('Digite seu nome completo');
-formulario.nomeid.focus();
-return false;
-}
-}
 
 //validar o CPF digitado
 
