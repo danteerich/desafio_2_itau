@@ -1,5 +1,6 @@
 //Validar Nome
-function validaNome(nomeid) {
+function validaNome() {
+           var nomeid = formulario.nome;
 	   var formulario = document.getElementById("formulario");
 	 	 if(nomeid.nome.value == "" || nomeid.nome.value == null || 	nomeid.nome.value.lenght < 3) {
 		  alert("Por favor, Digite o seu nome.");
